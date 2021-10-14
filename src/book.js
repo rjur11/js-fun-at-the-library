@@ -1,12 +1,22 @@
-function createTitle() {
-  
+function createTitle(title) {
+  var title = title;
+  console.log (`The ${title}`);
 }
 
+function buildMainCharacter() {
+
+}
+
+
+
+
+
+
 module.exports = {
-  createTitle,
-  // buildMainCharacter,
+  createTitle
+  buildMainCharacter,
   // saveReview,
   // calculatePageCount,
   // writeBook,
   // editBook
-}
+};
