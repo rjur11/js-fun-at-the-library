@@ -1,6 +1,7 @@
 function findTitle(title, shelf) {
   for (var i = 0; i < shelf.length; i++) {
     if (shelf[i].title === title) {
+      shelf.splice(i, 1);
       return true;
     }
   }
@@ -28,6 +29,10 @@ class Librarian {
       }
     }
     return `Sorry, we do not have ${title}`;
+  }
+
+  calculateLateFee(days) {
+    return Math.ceil(days * 0.25);
   }
 }
 
